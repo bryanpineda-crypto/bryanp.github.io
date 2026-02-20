@@ -1,69 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bryan Pineda | Portafolio</title>
-    <meta name="description" content="Bryan Pineda: Django, Next.js, Tailwind, Python, AWS, Azure, Cloudflare." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan Pineda | Portafolio</title>
+  <meta name="description" content="Portafolio de Bryan Pineda: Django, Next.js, Tailwind, Python, AWS, Azure, Cloudflare." />
+  
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.esm.js"></script>
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    section { scroll-snap-align: start; }
+    .skill-icon { width: 24px; height: 24px; }
+  </style>
+</head>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-    <!-- Lucide Icons -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.esm.js"></script>
+<body class="bg-slate-950 text-slate-100 h-screen overflow-y-scroll scroll-snap-y snap-mandatory">
 
-    <style>
-      body { font-family: 'Inter', sans-serif; }
-      /* Cards shadow más elegante */
-      .card { background: rgba(255,255,255,0.05); border-radius: 1rem; padding: 1.5rem; box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
-    </style>
-  </head>
+  <!-- Hero / Nombre -->
+  <section class="h-screen flex flex-col items-center justify-center snap-start">
+    <h1 class="text-6xl font-extrabold text-sky-400 mb-3 text-center">Bryan Pineda</h1>
+    <p class="text-xl text-slate-200 mb-6 text-center">Desarrollador Web | Experiencia en Nube</p>
+    <div class="flex gap-4">
+      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-6 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+        <lucide-icon name="github" class="w-5 h-5"></lucide-icon> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-6 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+        <lucide-icon name="linkedin" class="w-5 h-5"></lucide-icon> LinkedIn
+      </a>
+    </div>
+  </section>
 
-  <body class="bg-slate-950 text-slate-100 flex flex-col items-center justify-center h-screen gap-10 overflow-hidden">
-
-    <!-- Nombre -->
-    <header class="text-center">
-      <h1 class="text-6xl font-extrabold text-sky-400 mb-2">Bryan Pineda</h1>
-      <p class="text-xl text-slate-200">Desarrollador Web | Experiencia en Nube</p>
-    </header>
-
-    <!-- Experiencia / Skills -->
-    <section class="card w-full max-w-4xl flex flex-col items-center gap-4">
-      <h2 class="text-2xl font-bold text-sky-300 mb-4">Experiencia en</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 w-full justify-items-center">
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="box" class="w-4 h-4 text-sky-300"></lucide-icon>Django</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="code" class="w-4 h-4 text-sky-300"></lucide-icon>React</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="layout" class="w-4 h-4 text-sky-300"></lucide-icon>Next.js</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="server" class="w-4 h-4 text-sky-300"></lucide-icon>Python</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="database" class="w-4 h-4 text-sky-300"></lucide-icon>PostgreSQL</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="database" class="w-4 h-4 text-sky-300"></lucide-icon>MySQL</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="git-branch" class="w-4 h-4 text-sky-300"></lucide-icon>Git</span>
-        <span class="bg-white/10 px-3 py-1 rounded-full text-sm ring-1 ring-white/10 flex items-center gap-1"><lucide-icon name="cpu" class="w-4 h-4 text-sky-300"></lucide-icon>Linux</span>
-        <span class="bg-sky-500/20 px-3 py-1 rounded-full text-sm ring-1 ring-sky-400 flex items-center gap-1"><lucide-icon name="cloud" class="w-4 h-4 text-sky-400"></lucide-icon>AWS (EC2, S3, RDS, IAM, SG, Route53)</span>
-        <span class="bg-sky-500/20 px-3 py-1 rounded-full text-sm ring-1 ring-sky-400 flex items-center gap-1"><lucide-icon name="cloud" class="w-4 h-4 text-sky-400"></lucide-icon>Azure (VMs, Storage, Roles)</span>
-        <span class="bg-sky-500/20 px-3 py-1 rounded-full text-sm ring-1 ring-sky-400 flex items-center gap-1"><lucide-icon name="shield" class="w-4 h-4 text-sky-400"></lucide-icon>Cloudflare (Protección, DNS, Firewall)</span>
+  <!-- Experiencia / Skills -->
+  <section class="h-screen flex flex-col items-center justify-center gap-6 snap-start">
+    <h2 class="text-3xl font-bold text-sky-300 mb-6">Experiencia en</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-full max-w-4xl">
+      <!-- Backend / Frontend -->
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png" alt="Django" class="skill-icon">
+        <span>Django</span>
       </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="card w-full max-w-3xl flex flex-col sm:flex-row items-center justify-around gap-6">
-      <h2 class="text-2xl font-bold text-sky-300 mb-2 sm:mb-0">Contacto</h2>
-      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400"><lucide-icon name="github" class="w-5 h-5"></lucide-icon> GitHub</a>
-      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400"><lucide-icon name="linkedin" class="w-5 h-5"></lucide-icon> LinkedIn</a>
-    </section>
-
-    <!-- Proyectos personales -->
-    <section class="card w-full max-w-4xl">
-      <h2 class="text-2xl font-bold text-sky-300 mb-4 text-center">Proyectos personales</h2>
-      <div class="bg-slate-950/40 p-4 rounded-2xl ring-1 ring-white/10 flex flex-col gap-2">
-        <h3 class="text-xl font-semibold text-white">Sistema de Facturación</h3>
-        <p class="text-slate-200 text-sm">
-          Desarrollado con Django y Tailwind. Base de datos PostgreSQL. Desplegado en AWS (VM Linux) y protegido con Cloudflare. Control de clientes, productos y facturas con roles y permisos.
-        </p>
-        <a href="https://app.facturacion-br.me" target="_blank" class="text-sky-400 font-semibold underline text-sm">Ver demo</a>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon">
+        <span>React</span>
       </div>
-    </section>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Next.js" class="skill-icon">
+        <span>Next.js</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python" class="skill-icon">
+        <span>Python</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Postgres" class="skill-icon">
+        <span>PostgreSQL</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="MySQL" class="skill-icon">
+        <span>MySQL</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git" class="skill-icon">
+        <span>Git</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/226/226772.png" alt="Linux" class="skill-icon">
+        <span>Linux</span>
+      </div>
+      <!-- Cloud -->
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform bg-sky-500/20 ring-1 ring-sky-400">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="AWS" class="skill-icon">
+        <span>AWS (EC2, S3, RDS, IAM, SG, Route53)</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform bg-sky-500/20 ring-1 ring-sky-400">
+        <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="Azure" class="skill-icon">
+        <span>Azure (VMs, Storage, Roles)</span>
+      </div>
+      <div class="card flex items-center gap-2 p-4 hover:scale-105 transition-transform bg-sky-500/20 ring-1 ring-sky-400">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" alt="Cloudflare" class="skill-icon">
+        <span>Cloudflare (Protección, DNS, Firewall)</span>
+      </div>
+    </div>
+  </section>
 
-  </body>
+  <!-- Proyectos personales -->
+  <section class="h-screen flex flex-col items-center justify-center gap-6 snap-start px-4">
+    <h2 class="text-3xl font-bold text-sky-300 mb-6 text-center">Proyectos personales</h2>
+    <div class="card max-w-2xl p-6 hover:scale-105 transition-transform">
+      <h3 class="text-xl font-semibold text-white mb-2">Sistema de Facturación</h3>
+      <p class="text-slate-200 mb-2">
+        Desarrollado con Django y Tailwind. Base de datos PostgreSQL. Desplegado en AWS (VM Linux) y protegido con Cloudflare. Control de clientes, productos y facturas con roles y permisos.
+      </p>
+      <a href="https://app.facturacion-br.me" target="_blank" class="text-sky-400 font-semibold underline">Ver demo</a>
+    </div>
+  </section>
+
+</body>
 </html>
