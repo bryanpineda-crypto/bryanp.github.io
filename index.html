@@ -15,48 +15,48 @@
   <!-- Lucide Icons -->
   <script type="module" src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.esm.js"></script>
 
-  <!-- Estilos personalizados -->
   <style>
     body { 
       font-family: 'Inter', sans-serif; 
       scroll-behavior: smooth; 
+      background-color: #0f172a;
     }
-    section { scroll-snap-align: start; }
+    section { scroll-snap-align: start; padding-top: 2rem; padding-bottom: 2rem; }
     .skill-icon { width: 24px; height: 24px; }
     .card { 
       background-color: rgba(30, 41, 59, 0.5); 
       border-radius: 0.75rem; 
-      padding: 1rem; 
+      padding: 0.75rem 1rem; 
       transition: transform 0.2s; 
     }
     .card:hover { transform: scale(1.05); }
   </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100 h-screen overflow-y-scroll scroll-snap-y snap-mandatory">
+<body class="text-slate-100 overflow-y-auto scroll-snap-y snap-mandatory">
 
   <!-- ================= Hero / Nombre ================= -->
-  <section class="h-screen flex flex-col items-center justify-center snap-start text-center px-4">
-    <h1 class="text-6xl font-extrabold text-sky-400 mb-3">Bryan Pineda</h1>
-    <p class="text-xl text-slate-200 mb-6">Desarrollador Web | Experiencia en Nube</p>
-    <div class="flex gap-4 justify-center">
-      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-6 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+  <section class="flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-5xl sm:text-6xl font-extrabold text-sky-400 mb-2">Bryan Pineda</h1>
+    <p class="text-lg sm:text-xl text-slate-200 mb-4">Desarrollador Web | Experiencia en Nube</p>
+    <div class="flex gap-3 justify-center">
+      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
         <lucide-icon name="github" class="w-5 h-5"></lucide-icon> GitHub
       </a>
-      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-6 py-3 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
         <lucide-icon name="linkedin" class="w-5 h-5"></lucide-icon> LinkedIn
       </a>
     </div>
   </section>
 
   <!-- ================= Experiencia / Skills ================= -->
-  <section class="h-screen flex flex-col items-center justify-center gap-8 snap-start px-4">
-    <h2 class="text-3xl font-bold text-sky-300 mb-6 text-center">Experiencia en</h2>
+  <section class="flex flex-col items-center gap-6 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-sky-300 text-center mb-4">Experiencia en</h2>
 
-    <!-- Backend -->
-    <div class="w-full max-w-4xl mb-4">
-      <h3 class="text-xl font-semibold text-white mb-3">Backend / Frontend</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <!-- Backend / Frontend -->
+    <div class="w-full max-w-4xl">
+      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Backend / Frontend</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968885.png" alt="Django" class="skill-icon"><span>Django</span></div>
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon"><span>React</span></div>
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Next.js" class="skill-icon"><span>Next.js</span></div>
@@ -65,9 +65,9 @@
     </div>
 
     <!-- Bases de datos -->
-    <div class="w-full max-w-4xl mb-4">
-      <h3 class="text-xl font-semibold text-white mb-3">Bases de datos</h3>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    <div class="w-full max-w-4xl">
+      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Bases de datos</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Postgres" class="skill-icon"><span>PostgreSQL</span></div>
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="MySQL" class="skill-icon"><span>MySQL</span></div>
         <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git" class="skill-icon"><span>Git</span></div>
@@ -77,8 +77,8 @@
 
     <!-- Cloud / DevOps -->
     <div class="w-full max-w-4xl">
-      <h3 class="text-xl font-semibold text-white mb-3">Cloud / DevOps</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Cloud / DevOps</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
           <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="AWS" class="skill-icon">
           <span>AWS (EC2, S3, RDS, IAM, SG, Route53)</span>
@@ -96,11 +96,11 @@
   </section>
 
   <!-- ================= Proyectos personales ================= -->
-  <section class="h-screen flex flex-col items-center justify-center gap-6 snap-start px-4">
-    <h2 class="text-3xl font-bold text-sky-300 mb-6 text-center">Proyectos personales</h2>
-    <div class="card max-w-2xl p-6">
-      <h3 class="text-xl font-semibold text-white mb-2">Sistema de Facturación</h3>
-      <p class="text-slate-200 mb-2">
+  <section class="flex flex-col items-center gap-4 px-4 mb-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-sky-300 text-center mb-2">Proyectos personales</h2>
+    <div class="card max-w-2xl p-4">
+      <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Sistema de Facturación</h3>
+      <p class="text-slate-200 mb-2 text-sm sm:text-base">
         Desarrollado con Django y Tailwind. Base de datos PostgreSQL. Desplegado en AWS (VM Linux) y protegido con Cloudflare. Control de clientes, productos y facturas con roles y permisos.
       </p>
       <a href="https://app.facturacion-br.me" target="_blank" class="text-sky-400 font-semibold underline">Ver demo</a>
