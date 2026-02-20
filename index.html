@@ -12,9 +12,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Lucide Icons -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.esm.js"></script>
-
   <style>
     body { 
       font-family: 'Inter', sans-serif; 
@@ -22,7 +19,7 @@
       background-color: #0f172a;
     }
     section { scroll-snap-align: start; padding-top: 2rem; padding-bottom: 2rem; }
-    .skill-icon { width: 24px; height: 24px; }
+    .skill-icon { width: 24px; height: 24px; object-fit: contain; }
     .card { 
       background-color: rgba(30, 41, 59, 0.5); 
       border-radius: 0.75rem; 
@@ -30,6 +27,7 @@
       transition: transform 0.2s; 
     }
     .card:hover { transform: scale(1.05); }
+    a img.icon-link { width: 24px; height: 24px; object-fit: contain; }
   </style>
 </head>
 
@@ -41,10 +39,10 @@
     <p class="text-lg sm:text-xl text-slate-200 mb-4">Desarrollador Web | Experiencia en Nube</p>
     <div class="flex gap-3 justify-center">
       <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
-        <lucide-icon name="github" class="w-5 h-5"></lucide-icon> GitHub
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub" class="icon-link"> GitHub
       </a>
       <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
-        <lucide-icon name="linkedin" class="w-5 h-5"></lucide-icon> LinkedIn
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon-link"> LinkedIn
       </a>
     </div>
   </section>
@@ -57,10 +55,22 @@
     <div class="w-full max-w-4xl">
       <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Backend / Frontend</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-        <div class="card flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" class="skill-icon"><span>Django</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon"><span>React</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Next.js" class="skill-icon"><span>Next.js</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python" class="skill-icon"><span>Python</span></div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" class="skill-icon">
+          <span>Django</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="skill-icon">
+          <span>React</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" class="skill-icon">
+          <span>Next.js</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="skill-icon">
+          <span>Python</span>
+        </div>
       </div>
     </div>
 
@@ -68,10 +78,22 @@
     <div class="w-full max-w-4xl">
       <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Bases de datos</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="Postgres" class="skill-icon"><span>PostgreSQL</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="MySQL" class="skill-icon"><span>MySQL</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git" class="skill-icon"><span>Git</span></div>
-        <div class="card flex items-center gap-2"><img src="https://cdn-icons-png.flaticon.com/512/226/226772.png" alt="Linux" class="skill-icon"><span>Linux</span></div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="Postgres" class="skill-icon">
+          <span>PostgreSQL</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
+          <span>MySQL</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="Git" class="skill-icon">
+          <span>Git</span>
+        </div>
+        <div class="card flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="skill-icon">
+          <span>Linux</span>
+        </div>
       </div>
     </div>
 
@@ -80,15 +102,15 @@
       <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Cloud / DevOps</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
-          <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="AWS" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="skill-icon">
           <span>AWS (EC2, S3, RDS, IAM, SG, Route53)</span>
         </div>
         <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
-          <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="Azure" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" class="skill-icon">
           <span>Azure (VMs, Storage, Roles)</span>
         </div>
         <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
-          <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" alt="Cloudflare" class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original-wordmark.svg" alt="Cloudflare" class="skill-icon">
           <span>Cloudflare (Protección, DNS, Firewall)</span>
         </div>
       </div>
