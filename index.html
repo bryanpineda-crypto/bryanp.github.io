@@ -16,32 +16,39 @@
     body { 
       font-family: 'Inter', sans-serif; 
       scroll-behavior: smooth; 
-      background-color: #0f172a;
+      background-color: #f9fafb; /* Gris muy claro / casi blanco */
     }
     section { scroll-snap-align: start; padding-top: 2rem; padding-bottom: 2rem; }
-    .skill-icon { width: 24px; height: 24px; object-fit: contain; }
+    .skill-icon { width: 30px; height: 30px; object-fit: contain; }
     .card { 
-      background-color: rgba(30, 41, 59, 0.5); 
+      background-color: rgba(255, 255, 255, 0.85); 
       border-radius: 0.75rem; 
       padding: 0.75rem 1rem; 
-      transition: transform 0.2s; 
+      transition: transform 0.2s, box-shadow 0.2s; 
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .card:hover { transform: scale(1.05); }
+    .card:hover { 
+      transform: translateY(-3px); 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+    }
     a img.icon-link { width: 24px; height: 24px; object-fit: contain; }
   </style>
 </head>
 
-<body class="text-slate-100 overflow-y-auto scroll-snap-y snap-mandatory">
+<body class="text-slate-900 overflow-y-auto scroll-snap-y snap-mandatory">
 
   <!-- ================= Hero / Nombre ================= -->
   <section class="flex flex-col items-center justify-center text-center px-4">
-    <h1 class="text-5xl sm:text-6xl font-extrabold text-sky-400 mb-2">Bryan Pineda</h1>
-    <p class="text-lg sm:text-xl text-slate-200 mb-4">Desarrollador Web | Experiencia en Nube</p>
+    <h1 class="text-5xl sm:text-6xl font-extrabold text-sky-600 mb-2">Bryan Pineda</h1>
+    <p class="text-lg sm:text-xl text-gray-700 mb-4">Desarrollador Web | Experiencia en Nube</p>
     <div class="flex gap-3 justify-center">
-      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+      <a href="https://github.com/TU_USUARIO" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-white font-semibold hover:bg-sky-600">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub" class="icon-link"> GitHub
       </a>
-      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-slate-950 font-semibold hover:bg-sky-400">
+      <a href="https://www.linkedin.com/in/bryan-pineda-199610348/" target="_blank" class="flex items-center gap-2 bg-sky-500 px-5 py-2 rounded-xl text-white font-semibold hover:bg-sky-600">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon-link"> LinkedIn
       </a>
     </div>
@@ -49,25 +56,25 @@
 
   <!-- ================= Experiencia / Skills ================= -->
   <section class="flex flex-col items-center gap-6 px-4">
-    <h2 class="text-2xl sm:text-3xl font-bold text-sky-300 text-center mb-4">Experiencia en</h2>
+    <h2 class="text-2xl sm:text-3xl font-bold text-sky-600 text-center mb-4">Experiencia en</h2>
 
     <!-- Backend / Frontend -->
     <div class="w-full max-w-4xl">
-      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Backend / Frontend</h3>
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Backend / Frontend</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" class="skill-icon">
           <span>Django</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="skill-icon">
           <span>React</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="Next.js" class="skill-icon">
           <span>Next.js</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="skill-icon">
           <span>Python</span>
         </div>
@@ -76,21 +83,21 @@
 
     <!-- Bases de datos -->
     <div class="w-full max-w-4xl">
-      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Bases de datos</h3>
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Bases de datos</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="Postgres" class="skill-icon">
           <span>PostgreSQL</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="skill-icon">
           <span>MySQL</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="Git" class="skill-icon">
           <span>Git</span>
         </div>
-        <div class="card flex items-center gap-2">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" class="skill-icon">
           <span>Linux</span>
         </div>
@@ -99,17 +106,17 @@
 
     <!-- Cloud / DevOps -->
     <div class="w-full max-w-4xl">
-      <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Cloud / DevOps</h3>
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Cloud / DevOps</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-        <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="skill-icon">
           <span>AWS (EC2, S3, RDS, IAM, SG, Route53)</span>
         </div>
-        <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" class="skill-icon">
           <span>Azure (VMs, Storage, Roles)</span>
         </div>
-        <div class="card flex items-center gap-2 bg-sky-500/20 ring-1 ring-sky-400">
+        <div class="card">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original-wordmark.svg" alt="Cloudflare" class="skill-icon">
           <span>Cloudflare (Protección, DNS, Firewall)</span>
         </div>
@@ -119,13 +126,13 @@
 
   <!-- ================= Proyectos personales ================= -->
   <section class="flex flex-col items-center gap-4 px-4 mb-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-sky-300 text-center mb-2">Proyectos personales</h2>
+    <h2 class="text-2xl sm:text-3xl font-bold text-sky-600 text-center mb-2">Proyectos personales</h2>
     <div class="card max-w-2xl p-4">
-      <h3 class="text-lg sm:text-xl font-semibold text-white mb-1">Sistema de Facturación</h3>
-      <p class="text-slate-200 mb-2 text-sm sm:text-base">
+      <h3 class="text-lg sm:text-xl font-semibold text-gray-900 mb-1">Sistema de Facturación</h3>
+      <p class="text-gray-700 mb-2 text-sm sm:text-base">
         Desarrollado con Django y Tailwind. Base de datos PostgreSQL. Desplegado en AWS (VM Linux) y protegido con Cloudflare. Control de clientes, productos y facturas con roles y permisos.
       </p>
-      <a href="https://app.facturacion-br.me" target="_blank" class="text-sky-400 font-semibold underline">Ver Proyecto</a>
+      <a href="https://app.facturacion-br.me" target="_blank" class="text-sky-600 font-semibold underline">Ver Proyecto</a>
     </div>
   </section>
 
