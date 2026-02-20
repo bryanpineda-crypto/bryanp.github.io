@@ -4,287 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bryan Pineda | Portafolio</title>
-    <meta name="description" content="Portafolio de Bryan Pineda: Django, PostgreSQL, AWS y Linux. Proyecto: Sistema de Facturación." />
-
-    <!-- Tailwind (CDN) -->
+    <meta name="description" content="Bryan Pineda: Django, Next.js, Tailwind, AWS, Azure y Cloudflare." />
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Favicon opcional -->
-    <!-- <link rel="icon" href="favicon.ico" /> -->
   </head>
 
-  <body class="min-h-screen bg-slate-950 text-slate-100">
-    <!-- Background accents -->
-    <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
-      <div class="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-sky-500/20 blur-3xl"></div>
-      <div class="absolute -bottom-40 right-10 h-96 w-96 rounded-full bg-fuchsia-500/10 blur-3xl"></div>
+  <body class="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-6">
+    <!-- Nombre -->
+    <h1 class="text-5xl font-extrabold text-sky-400 mb-4">Bryan Pineda</h1>
+    <p class="text-lg text-slate-200 mb-6">Desarrollador Web / Experiencia en Nube</p>
+
+    <!-- Skills -->
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Django</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Next.js</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Tailwind</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">AWS</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Azure</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Cloudflare</span>
+      <span class="rounded-full bg-white/10 px-3 py-1 text-sm ring-1 ring-white/10">Seguridad / Grupos de seguridad</span>
     </div>
 
-    <!-- Navbar -->
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#" class="flex items-center gap-2 font-semibold tracking-tight">
-          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/10">
-            BP
-          </span>
-          <span>Bryan Pineda</span>
-        </a>
+    <!-- Enlaces -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+      <a href="https://github.com/TU_USUARIO" target="_blank" rel="noreferrer"
+         class="rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noreferrer"
+         class="rounded-xl bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400">
+        LinkedIn
+      </a>
+      <a href="https://app.facturacion-br.me" target="_blank" rel="noreferrer"
+         class="rounded-xl bg-white/10 px-5 py-3 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/15">
+        Ver App en Producción
+      </a>
+    </div>
 
-        <nav class="hidden items-center gap-6 text-sm text-slate-200 md:flex">
-          <a class="hover:text-white" href="#proyecto">Proyecto</a>
-          <a class="hover:text-white" href="#skills">Skills</a>
-          <a class="hover:text-white" href="#contacto">Contacto</a>
-        </nav>
-
-        <div class="flex items-center gap-2">
-          <!-- Cambia estos links -->
-          <a
-            href="https://github.com/TU_USUARIO"
-            target="_blank"
-            rel="noreferrer"
-            class="rounded-xl bg-white/10 px-3 py-2 text-sm ring-1 ring-white/10 hover:bg-white/15"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/TU_USUARIO"
-            target="_blank"
-            rel="noreferrer"
-            class="rounded-xl bg-white/10 px-3 py-2 text-sm ring-1 ring-white/10 hover:bg-white/15"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero -->
-    <main class="mx-auto max-w-6xl px-4">
-      <section class="py-14 md:py-20">
-        <div class="grid items-center gap-10 md:grid-cols-2">
-          <div>
-            <p class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-slate-200 ring-1 ring-white/10">
-              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-              Disponible para proyectos / prácticas
-            </p>
-
-            <h1 class="mt-5 text-4xl font-extrabold tracking-tight md:text-5xl">
-              Desarrollo soluciones web con <span class="text-sky-300">Django</span> y bases de datos
-            </h1>
-
-            <p class="mt-4 text-base leading-relaxed text-slate-200 md:text-lg">
-              Me enfoco en construir aplicaciones claras, seguras y mantenibles. Actualmente estoy trabajando en un
-              <span class="text-white font-medium">Sistema de Facturación</span> usando Django + PostgreSQL, desplegado en AWS.
-            </p>
-
-            <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-              <!-- Si tu app aún no está en app.facturacion-br.me, cambia el link por tu URL actual -->
-              <a
-                href="https://app.facturacion-br.me"
-                class="inline-flex items-center justify-center rounded-2xl bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400"
-              >
-                Ver demo (Producción)
-              </a>
-
-              <a
-                href="#proyecto"
-                class="inline-flex items-center justify-center rounded-2xl bg-white/10 px-5 py-3 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/15"
-              >
-                Ver detalles del proyecto
-              </a>
-            </div>
-
-            <div class="mt-6 flex flex-wrap gap-2 text-xs text-slate-200">
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Django</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">PostgreSQL</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">AWS</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Linux</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Git</span>
-            </div>
-          </div>
-
-          <!-- Card lateral -->
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <div class="flex items-start justify-between gap-4">
-              <div>
-                <h2 class="text-lg font-semibold">Sistema de Facturación</h2>
-                <p class="mt-1 text-sm text-slate-200">Django • PostgreSQL • Deploy en AWS</p>
-              </div>
-              <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs text-emerald-200 ring-1 ring-emerald-500/20">
-                En desarrollo
-              </span>
-            </div>
-
-            <div class="mt-5 grid gap-3 text-sm text-slate-200">
-              <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
-                <p class="font-medium text-white">Objetivo</p>
-                <p class="mt-1">Gestionar clientes, productos y facturas con control de estados y exportación.</p>
-              </div>
-
-              <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
-                <p class="font-medium text-white">Stack</p>
-                <p class="mt-1">Backend Django, BD PostgreSQL, servidor Linux en AWS, despliegue con Nginx/Gunicorn.</p>
-              </div>
-
-              <div class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10">
-                <p class="font-medium text-white">Enfoque</p>
-                <p class="mt-1">Buenas prácticas, seguridad (CSRF, permisos), y estructura limpia del proyecto.</p>
-              </div>
-            </div>
-
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row">
-              <!-- Cambia por el repo real si es público -->
-              <a
-                href="https://github.com/TU_USUARIO/TU_REPO"
-                target="_blank"
-                rel="noreferrer"
-                class="inline-flex flex-1 items-center justify-center rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/15"
-              >
-                Ver código
-              </a>
-              <a
-                href="#contacto"
-                class="inline-flex flex-1 items-center justify-center rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/15"
-              >
-                Contactarme
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Proyecto -->
-      <section id="proyecto" class="py-12 md:py-16">
-        <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Proyecto destacado</h2>
-        <p class="mt-2 max-w-3xl text-slate-200">
-          Un sistema de facturación web para administración de clientes, productos y emisión/gestión de facturas.
-        </p>
-
-        <div class="mt-8 grid gap-6 md:grid-cols-3">
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <h3 class="font-semibold">Módulos</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-200">
-              <li>• Clientes</li>
-              <li>• Productos</li>
-              <li>• Facturas</li>
-              <li>• Categorías / Proveedores (si aplica)</li>
-            </ul>
-          </div>
-
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <h3 class="font-semibold">Funciones</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-200">
-              <li>• CRUD completo</li>
-              <li>• Validaciones</li>
-              <li>• Roles/permisos (si aplica)</li>
-              <li>• Exportaciones (si aplica)</li>
-            </ul>
-          </div>
-
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <h3 class="font-semibold">Deploy</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-200">
-              <li>• AWS (Ubuntu)</li>
-              <li>• Nginx + Gunicorn</li>
-              <li>• PostgreSQL</li>
-              <li>• Dominio + HTTPS</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="mt-8 rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-          <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p class="text-sm text-slate-200">Demo en producción</p>
-              <p class="mt-1 text-lg font-semibold">app.facturacion-br.me</p>
-            </div>
-            <a
-              href="https://app.facturacion-br.me"
-              class="inline-flex items-center justify-center rounded-2xl bg-sky-500 px-5 py-3 text-sm font-semibold text-slate-950 hover:bg-sky-400"
-            >
-              Abrir demo
-            </a>
-          </div>
-          <p class="mt-4 text-sm text-slate-200">
-            Si la demo está en mantenimiento, también puedo mostrar capturas o un video corto del flujo.
-          </p>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="py-12 md:py-16">
-        <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Skills</h2>
-        <p class="mt-2 max-w-3xl text-slate-200">
-          Tecnologías con las que estoy trabajando y mejorando constantemente.
-        </p>
-
-        <div class="mt-8 grid gap-6 md:grid-cols-2">
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <h3 class="font-semibold">Backend</h3>
-            <div class="mt-4 flex flex-wrap gap-2 text-sm">
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Django</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Python</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">REST (básico)</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Auth / permisos</span>
-            </div>
-          </div>
-
-          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <h3 class="font-semibold">Infra / Herramientas</h3>
-            <div class="mt-4 flex flex-wrap gap-2 text-sm">
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">PostgreSQL</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">AWS</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Linux</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Nginx</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Gunicorn</span>
-              <span class="rounded-full bg-white/5 px-3 py-1 ring-1 ring-white/10">Git/GitHub</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contacto -->
-      <section id="contacto" class="py-12 md:py-16">
-        <div class="rounded-3xl bg-white/5 p-8 ring-1 ring-white/10">
-          <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Contacto</h2>
-          <p class="mt-2 text-slate-200">
-            ¿Quieres ver el proyecto o hablar de una colaboración? Escríbeme:
-          </p>
-
-          <div class="mt-6 grid gap-3 md:grid-cols-2">
-            <!-- Cambia tu correo -->
-            <a
-              href="mailto:TU_CORREO@correo.com"
-              class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10 hover:bg-slate-950/55"
-            >
-              <p class="text-sm text-slate-200">Email</p>
-              <p class="mt-1 font-semibold">TU_CORREO@correo.com</p>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/TU_USUARIO"
-              target="_blank"
-              rel="noreferrer"
-              class="rounded-2xl bg-slate-950/40 p-4 ring-1 ring-white/10 hover:bg-slate-950/55"
-            >
-              <p class="text-sm text-slate-200">LinkedIn</p>
-              <p class="mt-1 font-semibold">/in/TU_USUARIO</p>
-            </a>
-          </div>
-
-          <p class="mt-6 text-xs text-slate-400">
-            Hecho con GitHub Pages + Tailwind (CDN).
-          </p>
-        </div>
-      </section>
-
-      <footer class="py-10 text-center text-xs text-slate-400">
-        © <span id="year"></span> Bryan Pineda • facturacion-br.me
-      </footer>
-    </main>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <!-- Footer / nota -->
+    <p class="text-xs text-slate-400 text-center max-w-xs">
+      Aplicación desplegada en AWS, protegida con Cloudflare. Habilidades en Django, Next.js, Tailwind, Azure y administración de infraestructuras en la nube.
+    </p>
   </body>
 </html>
